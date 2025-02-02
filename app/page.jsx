@@ -1,5 +1,7 @@
 "use client";
 
+import FadeIn from "@/shared/FacdeIn";
+import Sample from "@/shared/Sample";
 import Contents from "@/widgets/contents/Contents";
 import MD from "@/widgets/md/MD";
 import MainSwiper from "@/widgets/swiper/MainSwiper";
@@ -9,7 +11,9 @@ export default function Home() {
     <main>
       <MainSwiper />
       <Contents />
-      <MD />
+      <FadeIn>
+        <MD />
+      </FadeIn>
     </main>
   );
 }
